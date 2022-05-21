@@ -21,7 +21,6 @@ export class TimelineComponent implements OnInit {
       .getKingFrench()
       .subscribe(king => {
         this.kings = king;
-        console.log(this.kings)
       });
   }
 }
