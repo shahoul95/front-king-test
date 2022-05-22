@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Url} from "../../models/Url";
+
 
 @Component({
   selector: 'app-header',
@@ -6,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  urls: Array<Url> = [];
+  constructor() {
+    this.urls = [
+      new Url(
+        'TimeLine',
+        '/timeline'
+      ),
+      new Url(
+        'Recherches des Rois de France',
+        '/tabs'
+      )
+    ]
+  }
 
   ngOnInit(): void {
   }

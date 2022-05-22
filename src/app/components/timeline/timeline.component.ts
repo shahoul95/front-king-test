@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {KingService} from "../services/king.service";
-import {IKingfrench} from "../interface/Ikingfrench";
+import {KingService} from "../../services/king.service";
+import {IKingfrench} from "../../interface/Ikingfrench";
 
 @Component({
   selector: 'app-timeline',
