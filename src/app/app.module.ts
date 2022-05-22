@@ -8,6 +8,8 @@ import { TableComponent } from './table/table.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './card/card.component';
+import { DescriptionPipe } from './pipes/description.pipe';
+import { AscendingPipe } from './pipes/ascending.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CardComponent } from './card/card.component';
     TableComponent,
     FooterComponent,
     HeaderComponent,
-    CardComponent
+    CardComponent,
+    DescriptionPipe,
+    AscendingPipe
   ],
   imports: [
     HttpClientModule,

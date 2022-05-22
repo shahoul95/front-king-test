@@ -7,7 +7,7 @@ import {KingService} from "../services/king.service";
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent implements OnInit {
-  public kings: any;
+  kings: any;
 
   constructor(private king : KingService) {
      this.getKings();
@@ -21,6 +21,7 @@ export class TimelineComponent implements OnInit {
       .getKingFrench()
       .subscribe(king => {
         this.kings = king;
+        console.log(this.kings)
       });
   }
 }
