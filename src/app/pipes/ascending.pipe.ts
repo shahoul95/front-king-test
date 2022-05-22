@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import {IKingfrench} from "../model/Ikingfrench";
+import {IKingfrench} from "../interface/Ikingfrench";
 
 @Pipe({
   name: 'ascending'
