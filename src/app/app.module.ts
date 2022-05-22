@@ -7,7 +7,7 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { TableComponent } from './table/table.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
-import { CardComponent } from './card/card.component';
+import { DescriptionKingFrenchComponent } from './description-king-french/description-king-french.component';
 import { DescriptionPipe } from './pipes/description.pipe';
 import { AscendingPipe } from './pipes/ascending.pipe';
 
@@ -18,7 +18,7 @@ import { AscendingPipe } from './pipes/ascending.pipe';
     TableComponent,
     FooterComponent,
     HeaderComponent,
-    CardComponent,
+    DescriptionKingFrenchComponent,
     DescriptionPipe,
     AscendingPipe
   ],

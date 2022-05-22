@@ -3,9 +3,8 @@
     <div class="col-md-12">
       <div id="content">
         <ul class="timeline-1 text-black" *ngFor="let king of kings | ascending" >
-          <li class="event" >
-            <h4 class="mb-3">{{king.name}}</h4>
-            <p>{{king.name | description}}</p>
+          <li class="event">
+          <app-description-king-french [king]="king"></app-description-king-french>
           </li>
         </ul>
       </div>
