@@ -8,8 +8,8 @@ import { TableComponent } from './components/table/table.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DescriptionKingFrenchComponent } from './components/description-king-french/description-king-french.component';
-import { DescriptionPipe } from './pipes/description.pipe';
-import { AscendingPipe } from './pipes/ascending.pipe';
+import { DescriptionPipe } from './pipes/description/description.pipe';
+import { AscendingPipe } from './pipes/ascending/ascending.pipe';
 import { TitleComponent } from './components/title/title.component';
 
 @NgModule({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {KingService} from "../../services/king.service";
+import {KingService} from "../../services/king/king.service";
 import {IKingfrench} from "../../interface/Ikingfrench";
 
 @Component({
