@@ -9,7 +9,7 @@ import {IKingfrench} from "../../interface/Ikingfrench";
 })
 export class TimelineComponent implements OnInit {
   kings: Array<IKingfrench> = [];
-
+  title : string = "Monarchie Roi de France - Les Bourbons"
   constructor(private king : KingService) {
      this.getKings();
   }

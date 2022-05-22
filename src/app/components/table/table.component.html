@@ -1,61 +1,21 @@
+<div class="flex-center mt-3">
+  <app-input-search (messageEvent)="receiveMessage($event)"></app-input-search>
+</div>
 <table class="table mt-5">
-  <thead class="black white-text">
+  <thead class="blue white-text">
   <tr>
-    <th scope="col">#</th>
-    <th scope="col">First</th>
-    <th scope="col">Last</th>
-    <th scope="col">Handle</th>
+    <th scope="col">id</th>
+    <th scope="col">name</th>
+    <th scope="col">date_of_dead</th>
+    <th scope="col">date_of_birth</th>
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-    <td>@twitter</td>
-  </tr>
-  </tbody>
-</table>
-
-<table class="table">
-  <thead class="grey lighten-2">
-  <tr>
-    <th scope="col">#</th>
-    <th scope="col">First</th>
-    <th scope="col">Last</th>
-    <th scope="col">Handle</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-  </tr>
-  <tr>
-    <th scope="row">2</th>
-    <td>Jacob</td>
-    <td>Thornton</td>
-    <td>@fat</td>
-  </tr>
-  <tr>
-    <th scope="row">3</th>
-    <td>Larry</td>
-    <td>the Bird</td>
-    <td>@twitter</td>
+  <tr *ngFor="let king of kings | searchFilter : message">
+    <th scope="row">{{king.id}}</th>
+    <td>{{king.name}}</td>
+    <td>{{king.date_of_dead}}</td>
+    <td>{{king.date_of_birth}}</td>
   </tr>
   </tbody>
 </table>

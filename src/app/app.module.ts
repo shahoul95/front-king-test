@@ -11,6 +11,9 @@ import { DescriptionKingFrenchComponent } from './components/description-king-fr
 import { DescriptionPipe } from './pipes/description/description.pipe';
 import { AscendingPipe } from './pipes/ascending/ascending.pipe';
 import { TitleComponent } from './components/title/title.component';
+import { InputSearchComponent } from './components/input-search/input-search.component';
+import {FormsModule} from "@angular/forms";
+import { SearchFilterPipe } from './pipes/search-filter/search-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,15 @@ import { TitleComponent } from './components/title/title.component';
     DescriptionKingFrenchComponent,
     DescriptionPipe,
     AscendingPipe,
-    TitleComponent
+    TitleComponent,
+    InputSearchComponent,
+    SearchFilterPipe
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
