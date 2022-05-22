@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { DescriptionKingFrenchComponent } from './description-king-french/description-king-french.component';
 import { DescriptionPipe } from './pipes/description.pipe';
 import { AscendingPipe } from './pipes/ascending.pipe';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AscendingPipe } from './pipes/ascending.pipe';
     HeaderComponent,
     DescriptionKingFrenchComponent,
     DescriptionPipe,
-    AscendingPipe
+    AscendingPipe,
+    TitleComponent
   ],
   imports: [
     HttpClientModule,

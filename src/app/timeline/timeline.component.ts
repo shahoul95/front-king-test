@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {KingService} from "../services/king.service";
+import {IKingfrench} from "../interface/Ikingfrench";
 
 @Component({
   selector: 'app-timeline',
@@ -7,7 +8,7 @@ import {KingService} from "../services/king.service";
   styleUrls: ['./timeline.component.scss']
 })
 export class TimelineComponent implements OnInit {
-  kings: any;
+  kings: Array<IKingfrench> = [];
 
   constructor(private king : KingService) {
      this.getKings();
@@ -21,7 +22,6 @@ export class TimelineComponent implements OnInit {
       .getKingFrench()
       .subscribe(king => {
         this.kings = king;
-        console.log(this.kings)
       });
   }
 }
