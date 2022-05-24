@@ -18,10 +18,14 @@ export class TimelineComponent implements OnInit {
   }
 
   getKings(){
-    this.king
-      .getKingFrench()
-      .subscribe(king => {
-        this.kings = king;
-      });
+    try {
+      this.king
+        .getKingFrench()
+        .subscribe(king => {
+          this.kings = king;
+        });
+    } catch (error){
+      return error;
+    }
   }
 }
